@@ -9,6 +9,10 @@ function Navbar() {
       <Toolbar>
         <Button color="inherit" onClick={() => navigate("/home")}>Home</Button>
         <Button color="inherit" onClick={() => navigate("/cart")}>Cart</Button>
+        <Button color="inherit" onClick={() => {
+          localStorage.removeItem("user");
+          navigate("/login");
+        }}>Logout</Button>
       </Toolbar>
     </AppBar>
   );
