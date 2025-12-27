@@ -28,6 +28,7 @@ function Login() {
           isLoggedIn: true,
         })
       );
+      navigate("/home");
     } else {
       setError("Email hoặc mật khẩu không đúng");
     }
